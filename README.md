@@ -30,8 +30,29 @@
 
 
 ## Answer the question no.2) 
+  **forEach()**
+-শুধু array-এর প্রতিটি element এ কাজ করে।
+-Return করে না ।
+  **map()**
+- array-এর প্রতিটি element এ কাজ করে।
+-নতুন array return করে। মূল array পরিবর্তন হয় না।
+  **filter()**
+-প্রতিটি element কে শর্ত অনুযায়ী পরীক্ষা করে।
+-শুধু যেগুলো true হয় সেগুলো নিয়ে নতুন array return করে।
 
-3) 
-4) 
 
-##  
+ ## Answer the question no .3) 
+  -ES6 এ **Arrow function** হলো JavaScript function লেখার ছোট ও সহজ syntax |
+
+
+ ## Answer the question no.4) 
+**Destructuring assignment** হলো ES6 এ একটা ফিচার যেখানে array বা object এর ভেতরের মানগুলোকে আলাদা variable এ সহজে assign করা যায়।
+
+## Answer the question no. 5)
+
+**Template literals** হলো নতুন string সিনট্যাক্স যেটা backtick (`) দিয়ে লেখা হয়।
+এটা 
+Variable / expression string এর মধ্যে রাখা যায়।
+Multiline string লেখা যায়।
+Expression evaluate করা যায়।
+--া নরমাল string করা যায় না
