@@ -13,6 +13,7 @@
     <!-- tailwind and daisyue -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style/style.css">
 
 </head>
 
@@ -79,13 +80,45 @@
             <div class=""><img src="./assets/hero-leaf2.png" alt=""></div>
         </div>
     </section>
+
+    <!-- <section id="spinner" class="flex justify-center items-center pt-5 hidden">
+        <span class="loading loading-dots loading-xl"></span>
+    </section> -->
+
     <!-- main section -->
-    <section class="border-2 border-green-600 w-11/12 mx-auto my-10 h-[900px]">
-        <h1 class="text-center ">Choose Your Trees</h1>
+    <section  class="mx-auto my-10 ">
+        <h1 class="text-center font-bold py-4 text-2xl ">Choose Your Trees</h1>
         <div class="flex gap-5 mx-5">
-            <div class="border-2 border-red-500 w-1/5 h-[875px]"></div>
-            <div class="border-2 border-red-500 w-3/5 h-[875px]"></div>
-            <div class="border-2 border-red-500 w-1/5 h-[875px]"></div>
+            <!-- category -->
+            <div class="w-0.5/5 ">
+                <h1 class="font-bold">Categories</h1>
+                <div>
+                    <ul
+                        class=" dropdown-content hover:bg-[#15803D] hover:text-white font-medium text-[16px]  rounded-sm mt-2 w-[100%] py-1 px-2">
+                        <li>
+                            <button id="all-plants" class="">All Trees</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="category-container">
+
+                </div>
+            </div>
+            <!-- card -->
+            <div id="card-container" class=" w-3/5  grid grid-cols-1 md:grid-cols-3 gap-3">
+
+            </div>
+            <!-- history -->
+            <div class=" w-1/5 bg-white rounded-2xl p-3 hidden md:block">
+                <h2 class="font-semibold py-3">Your Cart</h2>
+                <div id="cart-container">
+                   
+                </div>
+                <div class="flex justify-between py-3 text-[16px]">
+                    <p>total</p>
+                    <p>= <i class="fa-solid fa-bangladeshi-taka-sign"></i><span id="total">000</span></p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Campaign section -->
@@ -145,6 +178,27 @@
         <p class="text-[10px] py-3">© 2025 Green Earth. All Rights Reserved.</p>
     </footer>
 
+    
+
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="plant_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-container">
+
+                
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
