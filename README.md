@@ -1,4 +1,4 @@
-
+# WELCOME TO EMERGENCY HOTLINE 
 
 
 #### 1) What is the difference between var, let, and const?
