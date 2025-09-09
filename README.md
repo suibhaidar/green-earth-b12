@@ -13,9 +13,23 @@
 
 ## ⚙️ Answers
 
-1) 
+## Answer the question no. 1) 
 
-2) 
+**var** function-scoped  মানে যেই function এর ভেতরে declare করা হবে, পুরো function জুড়েই কাজ করবে।
+-Hoisting: হয় (কিন্তু মান থাকে undefined)।
+-Redeclare করা যায়।
+-মান পরিবর্তন করা যায়।
+**let** block-scope, scope এর ভেতরেই কাজ করবে।
+-Hoisting: হয়, ব্যবহার করলে error।
+-Redeclare করা যায় না।
+-মান পরিবর্তন করা যায়।
+**const** block-scope, scope এর ভেতরেই কাজ করবে।
+-Hoisting: হয়, ব্যবহার করলে error।
+-Redeclare করা যায় না।
+-মান পরিবর্তন করা যায় না ।
+
+
+## Answer the question no.2) 
 
 3) 
 4) 
